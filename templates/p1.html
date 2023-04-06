@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>PARENT</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+<body><center>
+    <h1 class="btn btn-primary">THIS IS PARENT CLASS</h1>
+    <h2>LINE 1</h2>
+    <h2>LINE 2</h2>
+    <h2>LINE 3</h2>
+    <h2>LINE 4</h2>
+    <h2>LINE 5</h2>
+    <h2>LINE 6</h2>
+    
+    <script src="{% static 'jquery.js' %}"></script>
+      
+    <script src="{% static 'popper.js' %}"></script>
+
+    <script src="{% static 'bootstrap.js' %}"></script>
+  
+    <script src="{% static 'mdb.js' %}"></script>
+</center>
+
+    {% block body_block %}
+    {% endblock %}
+</body>
+</html>
